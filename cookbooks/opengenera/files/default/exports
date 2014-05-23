@@ -1,1 +1,1 @@
-/ genera(rw,no_root_squash)
+/var genera(rw,no_root_squash,async,no_subtree_check)
