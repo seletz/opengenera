@@ -11,4 +11,5 @@ vncconfig -iconic &
 xterm -geometry 80x24+10+10 -ls -title "$VNCDESKTOP Desktop" &
 blackbox &
 cd /var/lib/symbolics
+date -s "29 Apr 1995 12:00"
 ./genera >& genera.log &
