@@ -1,7 +1,7 @@
-require_recipe "apt"
+include_recipe "apt"
 
 execute "install base packages" do
-  command "apt-get install -y curl vnc4server nfs-common nfs-user-server inetutils-inetd blackbox"
+  command "apt-get install -y curl vim vnc4server nfs-common nfs-kernel-server inetutils-inetd blackbox"
 end
 
 execute "expand opengenera" do
@@ -43,7 +43,7 @@ cookbook_file "/etc/exports" do
 end
 
 execute "bounce nfs" do
-  command "/etc/init.d/nfs-user-server restart"
+  command "/etc/init.d/nfs-kernel-server restart"
 end
 
 cookbook_file "/opt/snap4/.VLM" do

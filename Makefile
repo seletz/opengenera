@@ -3,7 +3,7 @@
 # most of these targets are pseudotargets, and make will always think they are out of date.
 # bash conditionals are liberally applied to avoid rebuilding things too often.
 
-BASEBOX=ubuntu-7.10-server-amd64
+BASEBOX=opscode-ubuntu-10.04
 
 all: opengenera-box opengenera2.tar.bz2
 
